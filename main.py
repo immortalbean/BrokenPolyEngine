@@ -3,12 +3,11 @@ import pygame
 pygame.init()
 resolution = (1280, 720)
 screen = pygame.display.set_mode(resolution)
-running = True
 clock = pygame.time.Clock()
 
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+while True:
+    if pygame.event.get(pygame.QUIT): break
     clock.tick(60)
-    screen.
+    pygame.draw.rect(screen, "red", (50, 50, 100, 60))
+    pygame.display.flip()
+pygame.quit()
