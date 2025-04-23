@@ -1,3 +1,3 @@
-import scripts.core.run as run
+import engine.scripts.core.run as run
 
 run.start()

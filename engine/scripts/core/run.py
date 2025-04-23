@@ -8,5 +8,10 @@ clock = pygame.time.Clock()
 def start():
     while True:
         if pygame.event.get(pygame.QUIT): break
+
         clock.tick(60)
     pygame.quit()
+
+def summon():
+    pass
+    # Summon game object
